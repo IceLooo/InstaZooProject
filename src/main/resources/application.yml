@@ -1,20 +1,16 @@
 spring:
   application:
-    name: FirstSecurityApp
+    name: InstaZooProject
   datasource:
     url: ${DB_URL}
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
 
-  security:
-    user:
-      password: password
-
 
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     show-sql: true
     properties:
       hibernate:

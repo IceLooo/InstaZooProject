@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Set;
 
 
+@Table(name = "posts")
 @Data
 @Entity
 public class Post {

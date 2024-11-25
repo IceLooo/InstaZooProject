@@ -10,6 +10,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.time.LocalDateTime;
 import java.util.*;
 
+@Table(name = "users")
 @Data
 @Entity
 public class User implements UserDetails {
@@ -21,7 +22,7 @@ public class User implements UserDetails {
     @Column(nullable = false)
     private String name;
 
-    @Column(unique = true, nullable = false)
+    @Column(unique = true, nullable = false, updatable = false)
     private String username;
 
     @Column(nullable = false)

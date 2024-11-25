@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 
+@Table(name = "image_model")
 @Data
 @Entity
 public class ImageModel {
